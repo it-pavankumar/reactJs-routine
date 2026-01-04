@@ -1,16 +1,17 @@
 import './App.css'
-import { Welcome } from './components/welcome'
+import { Button } from './components/button';
+import { Header } from './components/header'
+import { UserCard } from './components/userCard'
 
 function App() {
-  const text = 'DAY1';
-  const name = 'Pavan';
-  const name2 = 'PavanKumar';
+  const title: string = 'Welcome to Day2'
+  const user = { id: 1, name: "Pavan", role: "Frontend Engineer" }; 
 
   return (
     <>
-    <p> Hello Welcome to {text}</p>    
-    <Welcome name={name}/>
-    <Welcome name={name2}/>
+      <Header title= {title}></Header>
+      <UserCard user= {user}></UserCard>
+      <Button label='Click Me' onClick={() => { alert('Heyy')}}></Button>
     </>
   )
 }
