@@ -1,17 +1,15 @@
-import './App.css'
-import { Button } from './components/button';
-import { Header } from './components/header'
-import { UserCard } from './components/userCard'
+import './App.css';
+import { SimpleForm } from './components/simpleForm';
+// import { EmailInput } from './components/emailInput';
+// import { Toggle } from './components/toggleEvent';
 
 function App() {
-  const title: string = 'Welcome to Day2'
-  const user = { id: 1, name: "Pavan", role: "Frontend Engineer" }; 
 
   return (
     <>
-      <Header title= {title}></Header>
-      <UserCard user= {user}></UserCard>
-      <Button label='Click Me' onClick={() => { alert('Heyy')}}></Button>
+    {/* <Toggle></Toggle> */}
+    {/* <EmailInput></EmailInput> */}
+    <SimpleForm></SimpleForm>
     </>
   )
 }
